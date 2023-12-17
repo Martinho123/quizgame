@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="start-container">
+    <p>Escolha uma Categoria:</p>
+    <select id="categoria-select">
+      <option value="all">Todas as Categorias</option>
+      <option value="historia">Historia</option>
+      <option value="geografia">Geografia</option>
+      <option value="ciencia">Ciência</option>
+      <option value="esportes">Esportes</option>
+      <option value="tecnologia">Tecnologia</option>
+      <option value="comida">Comida</option>
+      <option value="filmes">Filmes e Series</option>
+      <option value="musica">Música</option>
+      <option value="literatura">Literatura</option>
+      <option value="animais">Animais</option>
+      <option value="viagens">Viagens</option>
+      <option value="medicina">Medicina</option>
+    </select>
+    <button onclick="startGame()">Iniciar Jogo</button>
+  </div>
+
+  <div id="quiz-container" style="display:none;">
+    <div id="question-container">
+      <p id="question">Pergunta aqui?</p>
+    </div>
+    <div id="options-container"></div>
+    <div id="result-container"></div>
+    <div id="score-container">Pontuação: <span id="score">0</span></div>
+    <div id="timer-container">Tempo restante: <span id="timer">20</span> segundos</div>
+  </div>
+
+  <div id="completion-container">
+    Parabéns! Você completou todas as perguntas perfeitamente. Obrigado por jogar!
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
